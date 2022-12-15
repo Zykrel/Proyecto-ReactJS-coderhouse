@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Proyecto-ReactJS-coderhouse/static/css/main.63676b2b.css",
+    "main.js": "/Proyecto-ReactJS-coderhouse/static/js/main.0050777f.js",
+    "static/js/787.e5bcaf65.chunk.js": "/Proyecto-ReactJS-coderhouse/static/js/787.e5bcaf65.chunk.js",
+    "static/media/compras.png": "/Proyecto-ReactJS-coderhouse/static/media/compras.52e480079fd310c165d0.png",
+    "static/media/logo.png": "/Proyecto-ReactJS-coderhouse/static/media/logo.c7c96b32219b6c34e1c2.png",
+    "index.html": "/Proyecto-ReactJS-coderhouse/index.html",
+    "main.63676b2b.css.map": "/Proyecto-ReactJS-coderhouse/static/css/main.63676b2b.css.map",
+    "main.0050777f.js.map": "/Proyecto-ReactJS-coderhouse/static/js/main.0050777f.js.map",
+    "787.e5bcaf65.chunk.js.map": "/Proyecto-ReactJS-coderhouse/static/js/787.e5bcaf65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63676b2b.css",
+    "static/js/main.0050777f.js"
+  ]
+}
