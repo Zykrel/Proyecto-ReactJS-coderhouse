@@ -1,0 +1,11 @@
+.carritoCantidad{
+    border: solid #bb2d3b;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin-top: 53px;
+    padding-bottom: 23px;
+    margin-left: -25px;
+    background: red;
+}
