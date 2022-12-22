@@ -9,7 +9,7 @@ function App() {
     <div>
       <NavBar />
       <ContadorPractica/>
-      <ItemListContainer greeting="Primer entregable-Nahuel Garcia :D" />
+      <ItemListContainer />
     </div>
 
   );
