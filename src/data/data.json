@@ -5,14 +5,16 @@
         "medida": "270x220x60",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard1.jpg",
         "precio": 180000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         "id": 2,
-        "nombre": "Placard de ",
-        "medida": "100x220x60",
-        "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard2.jpg",
-        "precio": 63000,
+        "nombre": "Bajo Mesada",
+        "medida": "100x95x60",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/pruebas1-20a0a.appspot.com/o/bajo-mesada.jpg?alt=media&token=3eb746d5-77e6-4328-81c1-7111902205f4",
+        "precio": 15000,
+        "category": "mueble de cocina",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
@@ -21,15 +23,17 @@
         "medida": "180x182x60 Espejo",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard7.jpg",
         "precio": 80000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
     {
         "id": 4,
-        "nombre": "Placard de",
-        "medida": "240x220x60 Espejo",
-        "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard4.jpg",
-        "precio": 150000,
+        "nombre": "Mueble con alacenas, ",
+        "medida": "Pedidos solo realizado a medida",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/pruebas1-20a0a.appspot.com/o/mueble-de-cocina.jpg?alt=media&token=4355ba7d-7529-4acf-af29-baffa4906c66",
+        "precio": 20000,
+        "category": "mueble de cocina",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
@@ -40,15 +44,17 @@
         "color":"Negro",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard5.jpg",
         "precio": 60000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
     {
         "id": 6,
-        "nombre": "Placard de",
-        "medida": "180x182x45 sin puertas",
-        "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard8.jpg",
-        "precio": 35000,
+        "nombre": "Escritorio Hollywood",
+        "medida": "pedido a Medida",
+        "imgSrc": "https://firebasestorage.googleapis.com/v0/b/pruebas1-20a0a.appspot.com/o/escritorio-hollywood.jpg?alt=media&token=32b37dae-5fa1-4c54-aa05-8971b15b6901",
+        "precio": 16000,
+        "category": "escritorio",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
@@ -58,6 +64,7 @@
         "medida": "100x200x60",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard9.jpg",
         "precio": 55000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
@@ -67,6 +74,7 @@
         "medida": "280x240x60",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard3.jpg",
         "precio": 180000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },
@@ -77,6 +85,7 @@
         "color": "Nature",
         "imgSrc": "https://senoresdelplacard.000webhostapp.com/assets/img/placard6.jpg",
         "precio": 50000,
+        "category": "placard",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     }

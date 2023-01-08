@@ -22,7 +22,7 @@ export const NavBar = () => {
                         </NavDropdown.Item>
                         <NavDropdown.Item href="#">Muebles De Cocina</NavDropdown.Item>
                     </NavDropdown>
-                    <NavLink className="nav-link" href="#">Sobre Nosotros</NavLink>
+                    <NavLink className="nav-link" to='/sobre-nosotros'>Sobre Nosotros</NavLink>
                 </Nav>
             </Container>
             <CartWidget />
