@@ -14,7 +14,7 @@
         "medida": "100x95x60",
         "imgSrc": "https://firebasestorage.googleapis.com/v0/b/pruebas1-20a0a.appspot.com/o/bajo-mesada.jpg?alt=media&token=3eb746d5-77e6-4328-81c1-7111902205f4",
         "precio": 15000,
-        "category": "mueble de cocina",
+        "category": "muebles-de-cocina",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
@@ -33,7 +33,7 @@
         "medida": "Pedidos solo realizado a medida",
         "imgSrc": "https://firebasestorage.googleapis.com/v0/b/pruebas1-20a0a.appspot.com/o/mueble-de-cocina.jpg?alt=media&token=4355ba7d-7529-4acf-af29-baffa4906c66",
         "precio": 20000,
-        "category": "mueble de cocina",
+        "category": "muebles-de-cocina",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
     },

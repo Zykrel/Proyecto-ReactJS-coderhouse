@@ -17,10 +17,13 @@ export const NavBar = () => {
                 <Nav className="ms-auto">
                     <NavLink className="nav-link" to="/">Inicio</NavLink>
                     <NavDropdown menuVariant="dark" title="Mas Productos" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">
+                    <NavLink className="nav-link" to="/productos/placard">
+                            Placares
+                        </NavLink>
+                        <NavLink className="nav-link" to="/productos/escritorio">
                             Escritorios
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#">Muebles De Cocina</NavDropdown.Item>
+                        </NavLink>
+                        <NavLink className="nav-link" to="/productos/muebles-de-cocina">Muebles De Cocina</NavLink>
                     </NavDropdown>
                     <NavLink className="nav-link" to='/sobre-nosotros'>Sobre Nosotros</NavLink>
                 </Nav>

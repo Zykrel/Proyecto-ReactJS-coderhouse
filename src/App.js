@@ -7,6 +7,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import SobreNosotros from './SobreNosotros/SobreNosotros';
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +17,7 @@ function App() {
 
     <Route path='/' element={ <ItemListContainer /> } />
 
-    <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
+    <Route path="/productos/:categoryId" element={ <ItemListContainer/> }/>
 
     <Route path='/detalles/:itemId' element={<ItemDetailContainer/>}/>  
 

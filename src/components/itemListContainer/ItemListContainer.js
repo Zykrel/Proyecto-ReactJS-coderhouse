@@ -10,7 +10,12 @@ export const ItemListContainer = () => {
     useEffect(() => {
         pedirDatos()
             .then((res) => {
-                setProductos(res)
+                if(categoryId){
+                    console.log("entro al if")
+                    setProductos(res.filter(prod => prod.category === categoryId))
+                }else{
+                    setProductos(res)
+                }
             })
             .catch((err) => {
                 console.log(err)
