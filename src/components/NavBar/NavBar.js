@@ -1,11 +1,12 @@
-import { Nav, Navbar, Container, NavLink, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import logo from '../../assets/img/logo.png';
 import { CartWidget } from '../CartWidget/CartWidget'
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
                 <img
                     alt="logo"
                     src={logo}
@@ -14,15 +15,17 @@ export const NavBar = () => {
             </Navbar.Brand>
             <Container>
                 <Nav className="ms-auto">
-                    <NavLink href="#">Inicio</NavLink>
+                    <NavLink className="nav-link" to="/">Inicio</NavLink>
                     <NavDropdown menuVariant="dark" title="Mas Productos" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">Interiores</NavDropdown.Item>
-                        <NavDropdown.Item href="#">
+                    <NavLink className="nav-link" to="/productos/placard">
+                            Placares
+                        </NavLink>
+                        <NavLink className="nav-link" to="/productos/escritorio">
                             Escritorios
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#">Muebles De Cocina</NavDropdown.Item>
+                        </NavLink>
+                        <NavLink className="nav-link" to="/productos/muebles-de-cocina">Muebles De Cocina</NavLink>
                     </NavDropdown>
-                    <NavLink href="#">Sobre Nosotros</NavLink>
+                    <NavLink className="nav-link" to='/sobre-nosotros'>Sobre Nosotros</NavLink>
                 </Nav>
             </Container>
             <CartWidget />
