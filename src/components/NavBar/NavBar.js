@@ -15,17 +15,17 @@ export const NavBar = () => {
             </Navbar.Brand>
             <Container>
                 <Nav className="ms-auto">
-                    <NavLink className="nav-link" to="/">Inicio</NavLink>
+                    <NavLink className="nav-link" to="/Proyecto-ReactJS-coderhouse/">Inicio</NavLink>
                     <NavDropdown menuVariant="dark" title="Mas Productos" id="basic-nav-dropdown">
-                    <NavLink className="nav-link" to="/productos/placard">
+                    <NavLink className="nav-link" to="/Proyecto-ReactJS-coderhouse/productos/placard">
                             Placares
                         </NavLink>
-                        <NavLink className="nav-link" to="/productos/escritorio">
+                        <NavLink className="nav-link" to="/Proyecto-ReactJS-coderhouse/productos/escritorio">
                             Escritorios
                         </NavLink>
-                        <NavLink className="nav-link" to="/productos/muebles-de-cocina">Muebles De Cocina</NavLink>
+                        <NavLink className="nav-link" to="/Proyecto-ReactJS-coderhouse/productos/muebles-de-cocina">Muebles De Cocina</NavLink>
                     </NavDropdown>
-                    <NavLink className="nav-link" to='/sobre-nosotros'>Sobre Nosotros</NavLink>
+                    <NavLink className="nav-link" to='/Proyecto-ReactJS-coderhouse/sobre-nosotros'>Sobre Nosotros</NavLink>
                 </Nav>
             </Container>
             <CartWidget />

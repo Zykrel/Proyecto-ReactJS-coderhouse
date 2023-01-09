@@ -16,15 +16,15 @@ function App() {
     {/* {<ContadorPractica/>} */}
     <Routes>
 
-    <Route path='/' element={ <ItemListContainer /> } />
+    <Route path='/Proyecto-ReactJS-coderhouse/' element={ <ItemListContainer /> } />
 
-    <Route path="/productos/:categoryId" element={ <ItemListContainer/> }/>
+    <Route path="/Proyecto-ReactJS-coderhouse/productos/:categoryId" element={ <ItemListContainer/> }/>
 
-    <Route path='/detalles/:itemId' element={<ItemDetailContainer/>}/>  
+    <Route path='/Proyecto-ReactJS-coderhouse/detalles/:itemId' element={<ItemDetailContainer/>}/>  
 
-    <Route path='/sobre-nosotros' element={<SobreNosotros />} />
+    <Route path='/Proyecto-ReactJS-coderhouse/sobre-nosotros' element={<SobreNosotros />} />
 
-    <Route path='*' element={ <Navigate to={'/'} />}/>
+    <Route path='*' element={ <Navigate to={'/Proyecto-ReactJS-coderhouse/'} />}/>
 
     </Routes>
     </BrowserRouter>
