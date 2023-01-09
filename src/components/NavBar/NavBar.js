@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="/">
+            <Navbar.Brand>
                 <img
                     alt="logo"
                     src={logo}
