@@ -6,22 +6,22 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
-    const {itemId} = useParams()
+    const { itemId } = useParams()
 
     useEffect(() => {
-    llamarPorId( Number(itemId) )
-        .then((data) =>{
-            setItem(data)
-        })
+        llamarPorId(Number(itemId))
+            .then((data) => {
+                setItem(data)
+            })
     }, [itemId])
 
     return (
-    <div className="container my-3">
-        {
-            item && <ItemDetail {...item}/>
-        }
-    </div>
-  )
+        <div className="container my-5">
+            {
+                item && <ItemDetail {...item} />
+            }
+        </div>
+    )
 }
 
 export default ItemDetailContainer

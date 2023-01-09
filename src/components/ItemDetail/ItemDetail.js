@@ -1,21 +1,36 @@
 import React from 'react'
+import Accordion from 'react-bootstrap/Accordion';
 
-const ItemDetail = ({id, nombre, medida, imgSrc, precio, color, descripcion, category}) => {
+import { useNavigate } from "react-router-dom"
+
+
+
+const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, category }) => {
+
+
+    const navigate = useNavigate()
+
+    const botonVolver = () => {
+        navigate(-1)
+    }
+
+
     return (
-<div className='container '>
-    <div className='row'>
-        <div className='col-6 mx-3'>
-            <h5>{nombre} {medida} </h5>
-            <img src={imgSrc} height="400"/>
-            <p><strong>Categoria: </strong> {category}</p>
-            <p><strong> Descripción: </strong>  {descripcion}</p>    
-            <p><strong> Precio: </strong> ${precio}</p> 
-            </div>
-    </div>
+        <>
+            <div className='col-7'>
+                <h2>{nombre} {medida} </h2>
+                <p><strong>Categoria: </strong> {category}</p>
+                <img src={imgSrc} height="400" />
+                <section className='mt-2'> <strong>Descripción: </strong> {descripcion}  </section>
+                <p>{color}</p>
+                <h4 className='mt-3'><strong> Precio: </strong> ${precio}</h4>
+                <br />
+                <button className="btn btn-outline-primary" onClick={botonVolver}>Volver</button>
+                <button className="btn btn-primary m-3">Añadir al carrito</button>
 
-            <h6 >{color}</h6>
-            <br/>
-</div>
+            </div>
+
+        </>
 
     )
 }
