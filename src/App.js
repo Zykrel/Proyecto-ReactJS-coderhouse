@@ -20,7 +20,7 @@ function App() {
 
     <Route path="/Proyecto-ReactJS-coderhouse/productos/:categoryId" element={ <ItemListContainer/> }/>
 
-    <Route path='/Proyecto-ReactJS-coderhouse/detalles/:itemId' element={<ItemDetailContainer/>}/>  
+    <Route path='/detalles/:itemId' element={<ItemDetailContainer/>}/>  
 
     <Route path='/Proyecto-ReactJS-coderhouse/sobre-nosotros' element={<SobreNosotros />} />
 
