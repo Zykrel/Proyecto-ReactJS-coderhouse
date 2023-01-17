@@ -12,7 +12,7 @@ const Item = ({ id, nombre, medida, imgSrc, precio, color, category }) => {
                         <p className="txt-center">Categoria: {category} </p>
                         <h6 className="txt-center">{color}</h6>
                         <p className="card-text txt-center">Precio: ${precio}</p>
-                        <Link to={`/Proyecto-ReactJS-coderhouse/detalles/${id}`} className="btn btn-outline-danger d-flex justify-content-center">Ver más</Link>
+                        <Link to={`/detalles/${id}`} className="btn btn-outline-danger d-flex justify-content-center">Ver más</Link>
                     </div>
                 </div>
             </div>
