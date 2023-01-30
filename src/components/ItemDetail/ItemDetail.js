@@ -65,7 +65,7 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
                     />
                     :<div className='row'> 
                         <div className='col-3 offset-8'>    
-                            <Link to="/cart" className="btn btn-primary">Terminar mi compra</Link>       
+                            <Link to="/cart" className="btn btn-primary mb-5">Terminar mi compra</Link>       
                         </div>  
                     </div> 
             }
