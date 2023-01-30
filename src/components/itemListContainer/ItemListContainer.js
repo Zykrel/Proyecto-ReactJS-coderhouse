@@ -15,13 +15,10 @@ export const ItemListContainer = () => {
     
     useEffect(() => {
         setCargando(true)
-
         const productRef = collection(db, "productos" )
-
         const quer = categoryId
                         ? query(productRef, where("category", "==", categoryId ))
                         : productRef
-
         getDocs(quer)
         .then((res) => {
             setProductos(res.docs.map((doc) => {

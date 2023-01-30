@@ -37,20 +37,24 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
 
 
     return (
-        <div className='row'>
-            <div className='col-6 mt-5'>
-                <img src={imgSrc} height="400" />
+        <div className='container'>
+            <div className='row'>
+                <div className='col-3 offset-6'>
+                    <button className="btn btn-outline-primary mt-3" onClick={botonVolver}>Atras</button>
+                </div>
+            </div>
+            <div className='row'>
+            <div className='col-6'>
+                <img src={imgSrc} height="500"/>
             </div>
             <div className='col-6 mt-5'>
                 <h2>{nombre} {medida} </h2>
-                <p><strong>Categoria: </strong> {category}</p>
-                <section className='mt-2'> <strong>Descripción: </strong> {descripcion}  </section>
+                <p className="mt-4"><strong>Categoria: </strong> {category}</p>
+                <section className='mt-4'> <strong>Descripción: </strong> {descripcion}  </section>
                 <p>{color}</p>
-                <h4 className='mt-3'><strong> Precio: </strong> ${precio}</h4>
-                <button className="btn btn-outline-primary mb-3" onClick={botonVolver}>Atras</button>
+                <h4 className='mt-5'><strong> Precio: </strong> ${precio}</h4>
                 <br />
             </div>
-
             {
                 !estaEnElCarrito(id)
                     ? <ItemCount
@@ -59,8 +63,13 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
                         max={stock}
                         agregar={agregarProductoCarrito}
                     />
-                    : <Link to="/cart" className="btn btn-success">Terminar mi compra</Link>
+                    :<div className='row'> 
+                        <div className='col-3 offset-8'>    
+                            <Link to="/cart" className="btn btn-primary">Terminar mi compra</Link>       
+                        </div>  
+                    </div> 
             }
+            </div>
 
         </div>
 
