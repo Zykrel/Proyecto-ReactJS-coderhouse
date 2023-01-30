@@ -45,7 +45,7 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
             </div>
             <div className='row'>
             <div className='col-6'>
-                <img src={imgSrc} height="500"/>
+                <img src={imgSrc} height="300"/>
             </div>
             <div className='col-6 mt-5'>
                 <h2>{nombre} {medida} </h2>

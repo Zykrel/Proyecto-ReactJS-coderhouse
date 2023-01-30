@@ -10,9 +10,6 @@ export const ItemListContainer = () => {
     const [cargando, setCargando] = useState(true)
     const { categoryId } = useParams()
     
-    
-    
-    
     useEffect(() => {
         setCargando(true)
         const productRef = collection(db, "productos" )
@@ -35,10 +32,12 @@ export const ItemListContainer = () => {
         )
 
     }, [categoryId])
+    console.log(cargando)
     return (
+        
         <div>
             {
-                cargando
+            cargando
                     ? <h2 className="text-center mt-5">Cargando...</h2>
                     : <ItemList productos={productos} />
             }
