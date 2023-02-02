@@ -8,16 +8,15 @@ import Cart from './components/Cart/Cart';
 import { CartProvider } from "./CartContext/CartContext"
 import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer"
-import Carrusel from "./components/Carrusel/Carrusel"
+import Index from './components/Index/Index';
 
 function App() {
   return (
     <CartProvider>
       <BrowserRouter>
         <NavBar />
-        {/* <Carrusel /> */}
         <Routes>
-          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/' element={<Index />} />
           <Route path="/productos/:categoryId" element={<ItemListContainer />} />
           <Route path='/detalles/:itemId' element={<ItemDetailContainer />} />
           <Route path='/sobre-nosotros' element={<SobreNosotros />} />

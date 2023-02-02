@@ -4,6 +4,7 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import {db} from "../../firebase/config"
 import { Spinner } from "react-bootstrap"
+import { Col, Container, Row } from 'react-bootstrap'
 
 export const ItemListContainer = () => {
 
@@ -12,8 +13,8 @@ export const ItemListContainer = () => {
     const { categoryId } = useParams()
     
     useEffect(() => {
-        setCargando(true)
         const productRef = collection(db, "productos" )
+        setCargando(true)
         const quer = categoryId
                         ? query(productRef, where("category", "==", categoryId ))
                         : productRef
@@ -31,16 +32,14 @@ export const ItemListContainer = () => {
         .finally(
             setCargando(false)
         )
-
     }, [categoryId])
     return (
-        
-        <div>
+        <>
             {
             cargando
-                    ? <Spinner/>
+                    ? <Spinner animation="border" className="m-5"/>
                     : <ItemList productos={productos} />
             }
-        </div>
+        </>
     )
 }

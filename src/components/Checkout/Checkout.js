@@ -11,9 +11,12 @@ import "./Checkout.css"
 import Swal from 'sweetalert2'
 
 const schema = Yup.object().shape({
-    nombre: Yup.string().min(5, 'Mínimo 5 caracteres').max(20, 'Máximo 20 caracteres').required('Campo requerido!'),
+    nombre: Yup.string().min(5, 'Mínimo 4 caracteres').max(20, 'Máximo 20 caracteres').required('Campo requerido!'),
     direccion: Yup.string().min(8, 'Mínimo 8 caracteres').max(25, 'Máximo 25 caracteres').required('Campo requerido!'),
-    email: Yup.string().email('El email no es válido').required('Campo requerido!')
+    email: Yup.string().email('El email no es válido').required('Campo requerido!'),
+    tarjeta: Yup.string().matches('^[0-9]{15,16}|(([0-9]{4}\s){3}[0-9]{3,4})$', 'Tarjeta no válida').required('Campo requerido!'),
+    vencimiento: Yup.string().matches('([0-1]{1}[0-9]{1}\/[0-9]{2})', 'Fecha no valida').required('Campo requerido!')
+
 })
 
 
@@ -84,13 +87,16 @@ const Checkout = () => {
     return (
         <Container>
             <Row>
-                <Col className='text-center' lg={12}><strong><h1>Terminar Compra</h1></strong></Col>
+                <Col className='text-center mt-4' lg={12}><strong><h1>Terminar Compra</h1></strong></Col>
             </Row>
             <Formik
                 initialValues={{
                     nombre: '',
                     direccion: '',
-                    email: ''
+                    email: '',
+                    tarjeta: '',
+                    seguridad: '',
+                    vencimiento:''
                 }}
                 onSubmit={(values) => {
                     crearOrden(values)
@@ -129,6 +135,45 @@ const Checkout = () => {
                             placeholder="Ingresar email"
                         />
                         {errors.email && <p>{errors.email}</p>}
+                        <Row>
+                            <Col lg={5}>
+                                    <input
+                                        className="form-control mb-3"
+                                        onChange={handleChange}
+                                        maxLength="16"
+                                        type="text"
+                                        name="tarjeta"
+                                        value={values.tarjeta}
+                                        placeholder="Ingresar numero de tarjeta"
+                                    />
+                                    {errors.tarjeta && <p>{errors.tarjeta}</p>}
+                            </Col>
+                            <Col lg={3}>
+                            <input
+                                        className="form-control mb-3"
+                                        onChange={handleChange}
+                                        type="text"
+                                        minLength="3"
+                                        maxLength="4"
+                                        name="seguridad"
+                                        value={values.seguridad}
+                                        placeholder="Ingresar codigo de seguridad"
+                                    />
+                                    {errors.seguridad && <p>{errors.seguridad}</p>}
+                            </Col>
+                            <Col lg={3}>
+                                    <input
+                                        className="form-control mb-3"
+                                        onChange={handleChange}
+                                        maxLength="5"
+                                        type="text"
+                                        name="vencimiento"
+                                        value={values.vencimiento}
+                                        placeholder="Ingresar fecha de vencimiento"
+                                    />
+                                    {errors.vencimiento && <p>{errors.vencimiento}</p>}
+                            </Col>
+                        </Row>
                         <Link className="btn btn-outline-danger mb-5 mt-3 marginLeft" to="/">Volver a inicio</Link>
                         <button className="btn btn-outline-primary mb-5 mt-3 margenes" type="submit">Finalizar Compra</button>
                     </form>
