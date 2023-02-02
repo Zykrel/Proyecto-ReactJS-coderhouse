@@ -8,6 +8,7 @@ import { Formik } from 'formik';
 import { Col, Container, Row } from 'react-bootstrap'
 import * as Yup from 'yup';
 import "./Checkout.css"
+import Swal from 'sweetalert2'
 
 const schema = Yup.object().shape({
     nombre: Yup.string().min(5, 'Mínimo 5 caracteres').max(20, 'Máximo 20 caracteres').required('Campo requerido!'),
@@ -18,7 +19,7 @@ const schema = Yup.object().shape({
 
 const Checkout = () => {
     const { cart, carritoVacio, totalDelCarrito } = useCartContext()
-    const { ordenarId, setOrdenarId } = useState(null)
+    const [ ordenarId, setOrdenarId ] = useState(null)
 
     const crearOrden = async (values) => {
         const ordenes = {
@@ -26,6 +27,7 @@ const Checkout = () => {
             item: cart,
             total: totalDelCarrito()
         }
+        
         const batches = writeBatch(db)
         const ordenesRef = collection(db, 'ordenes')
         const productosRef = collection(db, 'productos')
@@ -33,7 +35,6 @@ const Checkout = () => {
         const sinStock = []
 
         const itemsRef = query(productosRef, where(documentId(), 'in', cart.map(product => product.id)))
-
         const productos = await getDocs(itemsRef)
 
         productos.docs.forEach(doc => {
@@ -49,9 +50,9 @@ const Checkout = () => {
 
         if(sinStock.length === 0){
             batches.commit()
-            .then(() => {
+            .then(() => {            
                 addDoc( ordenesRef, ordenes)
-                .then((doc) =>{
+                .then((doc) =>{                                       
                     setOrdenarId(doc.id)
                     carritoVacio()
                 })
