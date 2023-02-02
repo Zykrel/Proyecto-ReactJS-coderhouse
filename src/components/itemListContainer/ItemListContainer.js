@@ -32,7 +32,6 @@ export const ItemListContainer = () => {
         )
 
     }, [categoryId])
-    console.log(cargando)
     return (
         
         <div>
