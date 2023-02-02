@@ -5,7 +5,7 @@ import { useCartContext } from "../../CartContext/CartContext"
 import ItemCount from "../ItemCount/ItemCount"
 
 
-const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, stock, category }) => {
+const ItemDetail = ({ id, nombre, medida, imgSrc, precio, descripcion, stock, category }) => {
 
     const { agregarAlCarrito, estaEnElCarrito } = useCartContext()
 
@@ -23,7 +23,6 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
             id,
             nombre,
             medida,
-            color,
             imgSrc,
             precio,
             descripcion,
@@ -51,7 +50,6 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, color, descripcion, st
                 <h2>{nombre} {medida} </h2>
                 <p className="mt-4"><strong>Categoria: </strong> {category}</p>
                 <section className='mt-4'> <strong>Descripción: </strong> {descripcion}  </section>
-                <p>{color}</p>
                 <h4 className='mt-5'><strong> Precio: </strong> ${precio}</h4>
                 <br />
             </div>
