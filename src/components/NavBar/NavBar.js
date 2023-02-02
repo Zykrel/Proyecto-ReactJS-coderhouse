@@ -1,18 +1,19 @@
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import logo from '../../assets/img/logo.png';
+import { Link } from "react-router-dom"
 import { CartWidget } from '../CartWidget/CartWidget'
 import { NavLink } from "react-router-dom";
 import './NavBar.css'
 export const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand>
+            <Link to="/">
                 <img
                     alt="logo"
                     src={logo}
                     height="80"
                 />
-            </Navbar.Brand>
+            </Link>
             <Container>
                 <Nav className="ms-auto margenes">
                     <NavLink className="nav-link" to="/">Inicio</NavLink>

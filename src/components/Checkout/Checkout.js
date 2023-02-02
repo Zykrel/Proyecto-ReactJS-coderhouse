@@ -68,11 +68,13 @@ const Checkout = () => {
     if(ordenarId){
         return (
             <Container>
-            <Row>
-                <Col lg={4}><h1>Tu Compra ha sido Realizada</h1></Col>
-                <Col lg={4}><h3>Tu codigo es: {ordenarId}</h3></Col>
-                <Link className='btn btn-outline-info' to="/">Volver</Link>
+                <Row>
+                    <Col lg={12} className='text-center mt-5 mb-4'><h3>Tu Compra ha sido Realizada</h3></Col>
                 </Row>
+                <Row>
+                    <Col lg={12} className='mb-3 mt-3 text-center'><span><strong>Tu codigo es: {ordenarId}</strong></span></Col>
+                </Row>
+                <Link className='btn btn-outline-info mb-5 mt-5 centrarBoton' to="/">Volver al inicio</Link>
         </Container>
         )
     }
@@ -105,7 +107,7 @@ const Checkout = () => {
                             type="text"
                             name="nombre"
                             value={values.nombre}
-                            placeholder="Ingrese su nombre"
+                            placeholder="Ingresar nombre completo"
                         />
                         {errors.nombre && <p>{errors.nombre}</p>}
 
@@ -115,7 +117,7 @@ const Checkout = () => {
                             type="text"
                             name="direccion"
                             value={values.direccion}
-                            placeholder="Ingrese su dirección"
+                            placeholder="Ingresar dirección completa"
                         />
                         {errors.direccion && <p>{errors.direccion}</p>}
                         <input
@@ -124,11 +126,11 @@ const Checkout = () => {
                             type="email"
                             name="email"
                             value={values.email}
-                            placeholder="Ingrese el email"
+                            placeholder="Ingresar email"
                         />
                         {errors.email && <p>{errors.email}</p>}
-                        <button className="btn btn-outline-danger mb-5 mt-3" type="reset">Reiniciar Datos</button>
-                        <button className="btn btn-outline-primary mb-5 mt-3 margenes" type="submit">Enviar</button>
+                        <Link className="btn btn-outline-danger mb-5 mt-3 marginLeft" to="/">Volver a inicio</Link>
+                        <button className="btn btn-outline-primary mb-5 mt-3 margenes" type="submit">Finalizar Compra</button>
                     </form>
                 )}
             </Formik>

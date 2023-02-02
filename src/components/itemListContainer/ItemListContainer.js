@@ -3,6 +3,7 @@ import {collection, getDocs, query, where} from "firebase/firestore"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import {db} from "../../firebase/config"
+import { Spinner } from "react-bootstrap"
 
 export const ItemListContainer = () => {
 
@@ -37,7 +38,7 @@ export const ItemListContainer = () => {
         <div>
             {
             cargando
-                    ? <h2 className="text-center mt-5">Cargando...</h2>
+                    ? <Spinner/>
                     : <ItemList productos={productos} />
             }
         </div>
