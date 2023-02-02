@@ -10,6 +10,7 @@ import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer"
 import Index from './components/Index/Index';
 
+
 function App() {
   return (
     <CartProvider>
@@ -22,12 +23,11 @@ function App() {
           <Route path='/sobre-nosotros' element={<SobreNosotros />} />
           <Route path='/cart' element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path='*' element={<Navigate to={'/'} />} />
+          <Route path='*' element={<Navigate to={"/"} />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
-
   );
 }
 

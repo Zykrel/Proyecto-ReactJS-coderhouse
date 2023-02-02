@@ -3,24 +3,18 @@ import { NavLink } from 'react-router-dom'
 import { useCartContext } from '../../CartContext/CartContext'
 import './CartWidget.css'
 
-
-
-
 export const CartWidget = () => {
-
-    const {totalCantidad} = useCartContext()
-
+    const { totalCantidad } = useCartContext()
     return (
         <>
-        <NavLink to="/cart">
+            <NavLink to="/cart">
                 <img
                     alt="logo"
                     src={CarritoImg}
                     height="60"
-                />  
+                />
             </NavLink>
-                <span className='carritoCantidad text-light'>{totalCantidad()}</span>
-
-            </>
+            <span className='carritoCantidad text-light'>{totalCantidad()}</span>
+        </>
     )
 }
