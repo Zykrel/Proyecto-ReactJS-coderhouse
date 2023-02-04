@@ -1,16 +1,20 @@
-import Carrito from '../../assets/img/compras.png'
-import Navbar from 'react-bootstrap/Navbar';
+import CarritoImg from '../../assets/img/compras.png'
+import { NavLink } from 'react-router-dom'
+import { useCartContext } from '../../CartContext/CartContext'
 import './CartWidget.css'
 
-
-export const CartWidget = () =>{
+export const CartWidget = () => {
+    const { totalCantidad } = useCartContext()
     return (
-        <Navbar.Collapse className="justify-content-end" href="#">
-        <img
-            alt="logo"
-            src={Carrito}
-            height="60"
-        /><span className='carritoCantidad text-light btn-danger d-block'>1</span>
-    </Navbar.Collapse>
+        <>
+            <NavLink to="/cart">
+                <img
+                    alt="logo"
+                    src={CarritoImg}
+                    height="60"
+                />
+            </NavLink>
+            <span className='carritoCantidad text-light'>{totalCantidad()}</span>
+        </>
     )
 }

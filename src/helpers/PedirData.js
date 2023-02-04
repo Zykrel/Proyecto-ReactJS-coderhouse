@@ -5,7 +5,7 @@ export const pedirDatos = () =>{
     return new Promise ((resolve, reject) => {
         setTimeout(() =>{
             resolve(productos)
-        }, 500)
+        }, 2500)
     })
 
 }
@@ -21,6 +21,6 @@ export const llamarPorId = (id) => {
                     error: "No se encontro el Producto"
                 })
             }
-        }, 500)
+        }, 2500)
     })
 }
