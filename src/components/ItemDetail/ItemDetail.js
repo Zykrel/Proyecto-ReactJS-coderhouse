@@ -50,7 +50,8 @@ const ItemDetail = ({ id, nombre, medida, imgSrc, precio, descripcion, stock, ca
                 <h2>{nombre} {medida} </h2>
                 <p className="mt-4"><strong>Categoria: </strong> {category}</p>
                 <section className='mt-4'> <strong>Descripción: </strong> {descripcion}  </section>
-                <h4 className='mt-5'><strong> Precio: </strong> ${precio}</h4>
+                <h5 className='mt-3'><strong>Stock disponible: </strong> {stock}</h5>
+                <h4 className='mt-3'><strong> Precio: </strong> ${precio}</h4>
                 <br />
             </div>
             {

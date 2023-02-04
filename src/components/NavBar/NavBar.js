@@ -27,6 +27,7 @@ export const NavBar = () => {
                         <NavLink className="nav-link" to="/productos/muebles-de-cocina">Muebles De Cocina</NavLink>
                     </NavDropdown>
                     <NavLink className="nav-link" to='/sobre-nosotros'>Sobre Nosotros</NavLink>
+                    <NavLink className="nav-link" to='/comprobantes'>Tus Comprobantes</NavLink>
                 </Nav>
             </Container>
             <CartWidget />

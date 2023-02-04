@@ -24,9 +24,11 @@ const Checkout = () => {
     const [ordenarId, setOrdenarId] = useState(null)
 
     const crearOrden = async (values) => {
+        const {nombre, direccion, email} = values
         const ordenes = {
-            cliente: values,
+            cliente: {nombre, direccion, email},
             item: cart,
+            fecha: new Date(Date.now()).toLocaleDateString(),
             total: totalDelCarrito()
         }
         const batches = writeBatch(db)

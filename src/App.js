@@ -9,6 +9,7 @@ import { CartProvider } from "./CartContext/CartContext"
 import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer/Footer"
 import Index from './components/Index/Index';
+import Comprobantes from './components/Comprobantes/Comprobantes';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/sobre-nosotros' element={<SobreNosotros />} />
           <Route path='/cart' element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/comprobantes" element={<Comprobantes />} />
           <Route path='*' element={<Navigate to={"/"} />} />
         </Routes>
         <Footer />
